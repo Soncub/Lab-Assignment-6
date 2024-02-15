@@ -15,7 +15,7 @@ public class CreateScene : MonoBehaviour
         CreateRandomForest();
         CreatePyramid();
     }
-    void InitializeVariables() 
+    void InitializeVariables()
     {
         sizeOfForest = 15;
         stonesRequired = 55;
@@ -23,17 +23,18 @@ public class CreateScene : MonoBehaviour
         stones = new GameObject[stonesRequired];
     }
 
-    void CreateGround() 
+    void CreateGround()
+    {
+        GameObject ground = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        ground.transform.position = new Vector3(0, 0, 0);
+    }
+
+    void CreateRandomForest()
     {
 
     }
 
-    void CreateRandomForest() 
-    {
-
-    }
-
-    void CreatePyramid() 
+    void CreatePyramid()
     {
 
     }
