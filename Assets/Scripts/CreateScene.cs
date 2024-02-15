@@ -15,11 +15,26 @@ public class CreateScene : MonoBehaviour
         CreateRandomForest();
         CreatePyramid();
     }
-    void InitializeVariables()
+    void InitializeVariables() 
+    {
+        sizeOfForest = 15;
+        stonesRequired = 55;
+        trees = new GameObject[sizeOfForest];
+        stones = new GameObject[stonesRequired];
+    }
 
-    void CreateGround()
+    void CreateGround() 
+    {
 
-    void CreateRandomForest()
+    }
 
-    void CreatePyramid()
+    void CreateRandomForest() 
+    {
+
+    }
+
+    void CreatePyramid() 
+    {
+
+    }
 }
