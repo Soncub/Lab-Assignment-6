@@ -25,8 +25,19 @@ public class CreateScene : MonoBehaviour
 
     void CreateGround()
     {
+        //Creates a primitive plane that acts as the ground GameObject
         GameObject ground = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        
+        //Sets name of GameObject to "Ground"
+        ground.name = "Ground";
+
+        //Sets position of GameObject to the origin
         ground.transform.position = new Vector3(0, 0, 0);
+        
+        //Sets color of GameObject to a hue similar to professor's example
+        var groundRenderer = ground.GetComponent<Renderer>();
+        Color groundColor = new Color(0.8f, 0.4f, 0.4f);
+        groundRenderer.material.SetColor("_Color", groundColor);
     }
 
     void CreateRandomForest()
