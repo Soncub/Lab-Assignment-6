@@ -25,7 +25,8 @@ public class CreateScene : MonoBehaviour
 
     void CreateGround() 
     {
-
+        GameObject ground = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        ground.transform.position = new Vector3(0,0,0);
     }
 
     void CreateRandomForest() 
