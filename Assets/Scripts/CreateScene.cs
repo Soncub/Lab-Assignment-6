@@ -58,9 +58,9 @@ public class CreateScene : MonoBehaviour
             int z = random.Next(-5, 5);
             trees.transform.position = new Vector3(x, y, z-7);
             // set scale
-            int x2 = random.Next(1, 3);
-            int y2 = random.Next(1, 3);
-            int z2 = random.Next(1, 3);
+            int x2 = random.Next(1, 4);
+            int y2 = random.Next(1, 4);
+            int z2 = random.Next(1, 4);
             trees.transform.localScale = new Vector3(x2, y2, z2);
             var treesRenderer = trees.GetComponent<Renderer>();
             Color treesColor = new Color(0.4f, 0.8f, 0.4f);
