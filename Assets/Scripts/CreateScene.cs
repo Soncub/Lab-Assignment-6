@@ -33,6 +33,9 @@ public class CreateScene : MonoBehaviour
 
         //Sets position of GameObject to the origin
         ground.transform.position = new Vector3(0, 0, 0);
+
+        //Multiplies local scale of ground by 5
+        ground.transform.localScale = new Vector3(5,5,5);
         
         //Sets color of GameObject to a hue similar to professor's example
         var groundRenderer = ground.GetComponent<Renderer>();
@@ -53,7 +56,7 @@ public class CreateScene : MonoBehaviour
             int x = random.Next(-5, 5);
             int y = random.Next(1, 1);
             int z = random.Next(-5, 5);
-            trees.transform.position = new Vector3(x, y, z);
+            trees.transform.position = new Vector3(x, y, z-7);
             // set scale
             int x2 = random.Next(1, 3);
             int y2 = random.Next(1, 3);
